@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BulletAddForce : MonoBehaviour {
+
+    public float force;
+    public Rigidbody bullet;
+
+	// Use this for initialization
+	void Start () {
+        bullet = GetComponent<Rigidbody>();
+	}
+	
+	// Update is called once per frame
+	void FixedUpdate () {
+        bullet.AddForce(transform.forward * force);
+	}
+}
