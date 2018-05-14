@@ -48,7 +48,8 @@ public class PlayerController : MonoBehaviour {
             theGun.isFiring = false;
         }
 	}
-
+	
+	//void update * 2
     void FixedUpdate () {
         myRigidBody.velocity = moveVelocity;
     }
